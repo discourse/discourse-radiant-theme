@@ -1,0 +1,66 @@
+@import 'variables';
+
+// Container
+// *------------------------------------------------*
+#main-outlet {
+  margin-top: 42px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: $color-cream;
+  width: 75%;
+  max-width: 1030px;
+  padding: 3em 3em 5%;
+  padding-bottom: 5% !important;
+  box-shadow: 0 8px 60px 0 rgba(103,151,255,.15), 0 12px 90px 0 rgba(103,151,255,.15);
+  border-top: 8px solid $tertiary;
+}
+
+#main-outlet:after  {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  border-radius: 2000px;
+  background: -webkit-linear-gradient(330deg,rgba(255,74,158,0) 45%,rgba(255, 74, 158, 0.4) 100%);
+  background: $gradient-pink;
+  right: 1px;
+  top: -57px;
+}
+
+#main-outlet:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  border-radius: 2000px;
+  background: -webkit-linear-gradient(330deg,rgba(255,74,158,0) 45%,rgba(255,74,158,.4) 100%);
+  background: $gradient-blue;
+  left: 4px;
+  top: 500px;
+}
+
+// Navigation Bar
+// *------------------------------------------------*
+.nav-pills li a {  
+  &.active {
+    background-color: $color-green;
+    border-radius: $radius-2;
+    color: $color-white;
+  }
+  &:hover {
+    border-radius: $radius-2;
+    background-color: $tertiary;
+    color: $color-white;
+    box-shadow: 0 8px 60px 0 rgba(103,151,255,.20), 0 12px 90px 0 rgba(103,151,255,.20);
+  }
+}
+
+.list-controls .combo-box .combo-box-header {
+  background: transparent;
+  color: $color-black;
+  border: none;
+}

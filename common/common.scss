@@ -1,0 +1,128 @@
+@import 'variables';
+
+// Header
+// *------------------------------------------------*
+.d-header {
+  background-color: $color-white;
+  box-shadow: none;
+  height: 5em;
+  .d-header-icons {
+    .d-icon {
+      color: $header_primary;
+      font-size: 1.511em;
+    }
+  }
+}
+
+.menu-panel .panel-body-bottom .btn {
+  background: $color-turqoise;
+  &.btn:hover {
+    background: $color-green;
+  }
+}
+
+// Buttons
+// *------------------------------------------------*
+#create-topic{
+  border: 2px solid $color-royal;
+  background-color: $color-royal;
+  border-radius: 10px;
+  color: $color-white;
+  transition: .3s;
+  .fa {
+    color: $color-white;
+  }
+}
+#create-topic:hover {
+  box-shadow: 8px 8px $color-light-violet;
+  transition: .3s;
+}
+
+.btn {
+  border-radius: $radius-4;
+  background: $color-mud;
+  color: $color-white;
+  .d-icon {
+    color: $color-white;
+  }
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      color: $color-white;
+      background: $tertiary-hover;
+      .d-icon {
+        color: $color-white;
+      }
+    }
+  }
+  &:hover, 
+  &.btn-hover {
+    color: $color-white;
+    background: $color-mud;
+    .d-icon {
+      color: $color-white;
+    }
+  }
+  &:active, 
+  &.btn-active {
+    background-image: none;
+    background-color: $color-mud;
+    color: $color-white;
+    .d-icon {
+      color: $color-white;
+    }
+  } 
+}
+
+.btn-danger {
+  background: $danger;
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+     background: $danger-hover;    
+    }
+  }
+}
+
+// Topic List
+// *------------------------------------------------*
+table {
+  tbody {
+    border-top: 2px solid $color-turqoise;
+    tr {
+      border-bottom: 1px solid $color-turqoise;
+    }
+  }
+}
+
+// Search
+// *------------------------------------------------*
+.search-container .search-advanced-sidebar {
+  .search-advanced-title {
+    background: $color-mud;
+    border-radius: 10px 10px 0 0;
+    color: $color-white;
+  }
+  .search-advanced-filters {
+    background: none;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid $color-mud;
+  }
+}
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  .nav-pills>li a.active {
+    background: none;
+    color: $tertiary;
+  }
+}
+
+.popup-menu .btn {
+  color: $color-black;
+}
+
+.btn[href] {
+  color: $color-white;
+}

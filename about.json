@@ -1,0 +1,15 @@
+{
+  "name": "discourse-radiant-theme",
+  "about_url": "",
+  "license_url": "",
+  "author": "Meghna",
+  "assets": {},
+  "color_schemes": {
+    "radiant": {
+      "primary": "000000",
+      "tertiary": "3977FF",
+      "header_primary": "4d4d4d"
+    }
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
