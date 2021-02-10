@@ -1,5 +1,126 @@
 @import 'variables';
 
+// INPUT FIELDS - SELECT - DROPDOWNS
+// *------------------------------------------------*
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea {
+  border-radius: $radius-2;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  border-color: $color-royal;
+  box-shadow: none;
+  border-radius: $radius-2;
+  outline: none;
+}
+
+.d-time-input .fields,
+.d-date-time-input,
+.d-date-time-input-range {
+  border-color: $primary-medium;
+}
+
+.select-kit {
+  outline: none;
+  .select-kit-collection {
+    background: $color-cream;
+  }
+  .select-kit-body {
+    background: $color-cream;
+  }
+  &.combo-box {
+    .select-kit-header {
+      border-radius: $radius-4;
+      outline: none;
+    }
+    &.category-chooser {
+      .category-desc {
+        color: $color-black;
+      }
+    }
+  }
+
+  &.multi-select {
+    .multi-select-header {
+      border-radius: $radius-4;
+      outline: none;
+      &.is-focused {
+        box-shadow: shadow("focus");
+        border-color: $color-royal;
+        border-radius: $radius-2;
+        outline: none;
+      }
+    }
+    &.is-expanded {
+      .select-kit-wrapper {
+        border-color: $color-royal;
+        border-radius: $radius-2;
+        box-shadow: none;
+        outline: none;
+      }
+      .multi-select-header {
+        border-color: $color-royal;
+        outline: none;
+      }
+    }
+  }
+}
+
+// MODAL
+// *------------------------------------------------*
+.modal-inner-container {
+  box-shadow: 0 8px 60px 0 rgba(103,151,255,.15), 0 12px 90px 0 rgba(103,151,255,.15);
+  border-radius: $radius-8;
+}
+
+.modal-header {
+  border-bottom: 1px solid $color-mud;
+}
+
+.modal-footer {
+  border-top: 1px solid $color-mud;
+  border: 0;
+}
+
+.inline-modal {
+  .modal-inner-container {
+    border: 0;
+  }
+}
+
+.bootbox {
+  &.modal {
+    border-radius: $radius-2;
+  }
+}
+
 // Header
 // *------------------------------------------------*
 .d-header {
@@ -19,6 +140,15 @@
   &.btn:hover {
     background: $color-green;
   }
+}
+
+.menu-panel.drop-down {
+  border-radius: $radius-20;
+  box-shadow: 0 8px 60px 0 rgba(255, 103, 222, 0.15), 0 12px 90px 0 rgba(255, 103, 217, 0.15);
+}
+
+.search-menu input[type="text"] {
+  border-radius: $radius-8;
 }
 
 // Buttons
@@ -41,12 +171,12 @@
 .btn {
   border-radius: $radius-4;
   background: $color-mud;
-  color: $color-white;
+  color: $primary-high;
   .d-icon {
-    color: $color-white;
+    color: $primary-high;
   }
   .discourse-no-touch & {
-    &:hover, 
+    &:hover,
     &.btn-hover {
       color: $color-white;
       background: $tertiary-hover;
@@ -55,31 +185,32 @@
       }
     }
   }
-  &:hover, 
+  &:hover,
   &.btn-hover {
-    color: $color-white;
+    color: $primary-high;
     background: $color-mud;
     .d-icon {
-      color: $color-white;
+      color: $primary-high;
     }
   }
-  &:active, 
+  &:active,
   &.btn-active {
     background-image: none;
     background-color: $color-mud;
-    color: $color-white;
+    color: $primary-high;
     .d-icon {
-      color: $color-white;
+      color: $primary-high;
     }
-  } 
+  }
 }
 
 .btn-danger {
   background: $danger;
+  color: $color-white;
   .discourse-no-touch & {
-    &:hover, 
+    &:hover,
     &.btn-hover {
-     background: $danger-hover;    
+     background: $danger-hover;
     }
   }
 }
@@ -101,7 +232,7 @@ table {
   .search-advanced-title {
     background: $color-mud;
     border-radius: 10px 10px 0 0;
-    color: $color-white;
+    color: $primary-high;
   }
   .search-advanced-filters {
     background: none;
@@ -125,4 +256,8 @@ table {
 
 .btn[href] {
   color: $color-white;
+}
+
+.btn[href] {
+  color: $color-black;
 }
