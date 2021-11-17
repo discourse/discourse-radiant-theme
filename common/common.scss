@@ -217,10 +217,10 @@ textarea:focus {
 
 // Topic List
 // *------------------------------------------------*
-table {
-  tbody {
+.topic-list {
+  .topic-list-body {
     border-top: 2px solid $color-turqoise;
-    tr {
+    .topic-list-item {
       border-bottom: 1px solid $color-turqoise;
     }
   }
