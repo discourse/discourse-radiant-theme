@@ -69,7 +69,7 @@ textarea:focus {
 
   &.multi-select {
     .multi-select-header {
-      border-radius: $radius-4;
+      border-radius: $radius-2;
       outline: none;
       &.is-focused {
         box-shadow: shadow("focus");
