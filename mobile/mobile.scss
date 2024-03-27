@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 // Container
 // *------------------------------------------------*
@@ -6,13 +6,14 @@
   margin-top: 30px;
   margin-bottom: 30px;
   background: $color-cream;
-  box-shadow: 0 8px 60px 0 rgba(103,151,255,.15), 0 12px 90px 0 rgba(103,151,255,.15);
+  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.15),
+    0 12px 90px 0 rgba(103, 151, 255, 0.15);
   border-radius: $radius-20;
 }
 
 // Navigation Bar
 // *------------------------------------------------*
-.nav-pills li a {  
+.nav-pills li a {
   &.active {
     color: $color-black;
   }
