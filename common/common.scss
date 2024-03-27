@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 // INPUT FIELDS - SELECT - DROPDOWNS
 // *------------------------------------------------*
@@ -96,7 +96,8 @@ textarea:focus {
 // MODAL
 // *------------------------------------------------*
 .modal-inner-container {
-  box-shadow: 0 8px 60px 0 rgba(103,151,255,.15), 0 12px 90px 0 rgba(103,151,255,.15);
+  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.15),
+    0 12px 90px 0 rgba(103, 151, 255, 0.15);
   border-radius: $radius-8;
 }
 
@@ -144,7 +145,8 @@ textarea:focus {
 
 .menu-panel.drop-down {
   border-radius: $radius-20;
-  box-shadow: 0 8px 60px 0 rgba(255, 103, 222, 0.15), 0 12px 90px 0 rgba(255, 103, 217, 0.15);
+  box-shadow: 0 8px 60px 0 rgba(255, 103, 222, 0.15),
+    0 12px 90px 0 rgba(255, 103, 217, 0.15);
 }
 
 .search-menu input[type="text"] {
@@ -153,19 +155,19 @@ textarea:focus {
 
 // Buttons
 // *------------------------------------------------*
-#create-topic{
+#create-topic {
   border: 2px solid $color-royal;
   background-color: $color-royal;
   border-radius: 10px;
   color: $color-white;
-  transition: .3s;
+  transition: 0.3s;
   .fa {
     color: $color-white;
   }
 }
 #create-topic:hover {
   box-shadow: 8px 8px $color-light-violet;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn {
@@ -210,7 +212,7 @@ textarea:focus {
   .discourse-no-touch & {
     &:hover,
     &.btn-hover {
-     background: $danger-hover;
+      background: $danger-hover;
     }
   }
 }
@@ -244,7 +246,7 @@ textarea:focus {
 // Admin
 // *------------------------------------------------*
 .admin-controls {
-  .nav-pills>li a.active {
+  .nav-pills > li a.active {
     background: none;
     color: $tertiary;
   }
