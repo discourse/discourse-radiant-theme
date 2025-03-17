@@ -9,12 +9,13 @@
   background: $color-cream;
   max-width: 1030px;
   padding-bottom: 5% !important;
-  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.15),
+  box-shadow:
+    0 8px 60px 0 rgba(103, 151, 255, 0.15),
     0 12px 90px 0 rgba(103, 151, 255, 0.15);
   border-top: 8px solid $tertiary;
 }
 
-#main-outlet:after {
+#main-outlet::after {
   content: "";
   display: block;
   position: absolute;
@@ -22,7 +23,7 @@
   width: 500px;
   height: 500px;
   border-radius: 2000px;
-  background: -webkit-linear-gradient(
+  background: linear-gradient(
     330deg,
     rgba(255, 74, 158, 0) 45%,
     rgba(255, 74, 158, 0.4) 100%
@@ -32,7 +33,7 @@
   top: -57px;
 }
 
-#main-outlet:before {
+#main-outlet::before {
   content: "";
   display: block;
   position: absolute;
@@ -40,7 +41,7 @@
   width: 500px;
   height: 500px;
   border-radius: 2000px;
-  background: -webkit-linear-gradient(
+  background: linear-gradient(
     330deg,
     rgba(255, 74, 158, 0) 45%,
     rgba(255, 74, 158, 0.4) 100%
@@ -58,11 +59,13 @@
     border-radius: $radius-2;
     color: $color-white;
   }
+
   &:hover {
     border-radius: $radius-2;
     background-color: $tertiary;
     color: $color-white;
-    box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.2),
+    box-shadow:
+      0 8px 60px 0 rgba(103, 151, 255, 0.2),
       0 12px 90px 0 rgba(103, 151, 255, 0.2);
   }
 }

@@ -49,17 +49,21 @@ textarea:focus {
 
 .select-kit {
   outline: none;
+
   .select-kit-collection {
     background: $color-cream;
   }
+
   .select-kit-body {
     background: $color-cream;
   }
+
   &.combo-box {
     .select-kit-header {
       border-radius: $radius-2;
       outline: none;
     }
+
     &.category-chooser {
       .category-desc {
         color: $color-black;
@@ -71,6 +75,7 @@ textarea:focus {
     .multi-select-header {
       border-radius: $radius-2;
       outline: none;
+
       &.is-focused {
         box-shadow: shadow("focus");
         border-color: $color-royal;
@@ -78,6 +83,7 @@ textarea:focus {
         outline: none;
       }
     }
+
     &.is-expanded {
       .select-kit-wrapper {
         border-color: $color-royal;
@@ -85,6 +91,7 @@ textarea:focus {
         box-shadow: none;
         outline: none;
       }
+
       .multi-select-header {
         border-color: $color-royal;
         outline: none;
@@ -96,7 +103,8 @@ textarea:focus {
 // MODAL
 // *------------------------------------------------*
 .modal-inner-container {
-  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.15),
+  box-shadow:
+    0 8px 60px 0 rgba(103, 151, 255, 0.15),
     0 12px 90px 0 rgba(103, 151, 255, 0.15);
   border-radius: $radius-8;
 }
@@ -128,6 +136,7 @@ textarea:focus {
   background-color: $color-white;
   box-shadow: none;
   height: 5em;
+
   .d-header-icons {
     .d-icon {
       color: $header_primary;
@@ -137,7 +146,8 @@ textarea:focus {
 }
 
 .menu-panel .panel-body-bottom .btn {
-  background: $color-turqoise;
+  background: $color-turquoise;
+
   &.btn:hover {
     background: $color-green;
   }
@@ -145,7 +155,8 @@ textarea:focus {
 
 .menu-panel.drop-down {
   border-radius: $radius-20;
-  box-shadow: 0 8px 60px 0 rgba(255, 103, 222, 0.15),
+  box-shadow:
+    0 8px 60px 0 rgba(255, 103, 222, 0.15),
     0 12px 90px 0 rgba(255, 103, 217, 0.15);
 }
 
@@ -161,10 +172,12 @@ textarea:focus {
   border-radius: 10px;
   color: $color-white;
   transition: 0.3s;
+
   .fa {
     color: $color-white;
   }
 }
+
 #create-topic:hover {
   box-shadow: 8px 8px $color-light-violet;
   transition: 0.3s;
@@ -174,32 +187,39 @@ textarea:focus {
   border-radius: $radius-4;
   background: $color-mud;
   color: $primary-high;
+
   .d-icon {
     color: $primary-high;
   }
+
   .discourse-no-touch & {
     &:hover,
     &.btn-hover {
       color: $color-white;
       background: $tertiary-hover;
+
       .d-icon {
         color: $color-white;
       }
     }
   }
+
   &:hover,
   &.btn-hover {
     color: $primary-high;
     background: $color-mud;
+
     .d-icon {
       color: $primary-high;
     }
   }
+
   &:active,
   &.btn-active {
     background-image: none;
     background-color: $color-mud;
     color: $primary-high;
+
     .d-icon {
       color: $primary-high;
     }
@@ -209,6 +229,7 @@ textarea:focus {
 .btn-danger {
   background: $danger;
   color: $color-white;
+
   .discourse-no-touch & {
     &:hover,
     &.btn-hover {
@@ -221,9 +242,10 @@ textarea:focus {
 // *------------------------------------------------*
 .topic-list {
   .topic-list-body {
-    border-top: 2px solid $color-turqoise;
+    border-top: 2px solid $color-turquoise;
+
     .topic-list-item {
-      border-bottom: 1px solid $color-turqoise;
+      border-bottom: 1px solid $color-turquoise;
     }
   }
 }
@@ -236,6 +258,7 @@ textarea:focus {
     border-radius: 10px 10px 0 0;
     color: $primary-high;
   }
+
   .search-advanced-filters {
     background: none;
     border-radius: 0 0 10px 10px;
@@ -254,10 +277,6 @@ textarea:focus {
 
 .popup-menu .btn {
   color: $color-black;
-}
-
-.btn[href] {
-  color: $color-white;
 }
 
 .btn[href] {

@@ -1,7 +1,8 @@
 {
   "name": "Radiant",
   "about_url": "https://meta.discourse.org/t/radiant-an-elegant-theme-for-discourse/178552",
-  "license_url": "https://github.com/MeghnaAJ/discourse-radiant-theme/blob/master/LICENSE",
+  "license_url": "https://github.com/discourse/discourse-radiant-theme/blob/main/LICENSE",
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966",
   "author": "Meghna",
   "assets": {},
   "color_schemes": {
@@ -10,6 +11,5 @@
       "tertiary": "3977FF",
       "header_primary": "4d4d4d"
     }
-  },
-  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+  }
 }
