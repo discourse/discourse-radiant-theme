@@ -11,5 +11,6 @@
       "tertiary": "3977FF",
       "header_primary": "4d4d4d"
     }
-  }
+  },
+  "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
 }
