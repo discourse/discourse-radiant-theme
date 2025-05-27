@@ -248,8 +248,8 @@ textarea:focus {
 
 // Nav Pills
 // *------------------------------------------------*
-.nav-pills>li a.active::after,
-.nav-pills>li button.active::after {
+.nav-pills > li a.active::after,
+.nav-pills > li button.active::after {
   background-color: transparent;
 }
 
