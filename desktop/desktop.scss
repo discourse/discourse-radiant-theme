@@ -10,8 +10,8 @@
   max-width: 1030px;
   padding-bottom: 5% !important;
   box-shadow:
-    0 8px 60px 0 rgba(103, 151, 255, 0.15),
-    0 12px 90px 0 rgba(103, 151, 255, 0.15);
+    0 8px 60px 0 rgb(103, 151, 255, 0.15),
+    0 12px 90px 0 rgb(103, 151, 255, 0.15);
   border-top: 8px solid $tertiary;
 }
 
@@ -25,8 +25,8 @@
   border-radius: 2000px;
   background: linear-gradient(
     330deg,
-    rgba(255, 74, 158, 0) 45%,
-    rgba(255, 74, 158, 0.4) 100%
+    rgb(255, 74, 158, 0) 45%,
+    rgb(255, 74, 158, 0.4) 100%
   );
   background: $gradient-pink;
   right: 1px;
@@ -43,8 +43,8 @@
   border-radius: 2000px;
   background: linear-gradient(
     330deg,
-    rgba(255, 74, 158, 0) 45%,
-    rgba(255, 74, 158, 0.4) 100%
+    rgb(255, 74, 158, 0) 45%,
+    rgb(255, 74, 158, 0.4) 100%
   );
   background: $gradient-blue;
   left: 4px;
@@ -65,8 +65,8 @@
     background-color: $tertiary;
     color: $color-white;
     box-shadow:
-      0 8px 60px 0 rgba(103, 151, 255, 0.2),
-      0 12px 90px 0 rgba(103, 151, 255, 0.2);
+      0 8px 60px 0 rgb(103, 151, 255, 0.2),
+      0 12px 90px 0 rgb(103, 151, 255, 0.2);
   }
 }
 
